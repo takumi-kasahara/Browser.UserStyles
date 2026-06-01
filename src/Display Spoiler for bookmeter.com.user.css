@@ -1,0 +1,11 @@
+/* ==UserStyle==
+@name         Display Spoiler for bookmeter.com
+@namespace    https://github.com/takumi-kasahara
+@version      1.0.0
+@preprocessor default
+==/UserStyle== */
+@document domain("bookmeter.com") {
+  [data-netabare="true"] {
+    color: inherit !important;
+  }
+}

@@ -1,0 +1,66 @@
+/* ==UserStyle==
+@name         Minimal Layout for Pixiv
+@namespace    https://github.com/takumi-kasahara
+@version      1.0.0
+@preprocessor default
+==/UserStyle== */
+@document domain("pixiv.net") {
+  li:has(a[href ^="/novel/show.php?id="]) {
+    display: none;
+  }
+
+  div[data-ga4-label="page_root"]>div:first-child>div:first-child {
+    display: none;
+  }
+
+  .max-w-\[var\(--carousel-width\)\] {
+    max-width: unset;
+  }
+
+  .bkRoSP {
+    justify-content: center;
+  }
+
+  /* #region bookmark_new_illust.php */
+  .iJEVBL, .daBOIJ {
+    width: auto;
+  }
+
+  /* #endregion */
+
+  /* #region /ranking.php */
+  .w-col-span-10, .w-col-span-12 {
+    width: auto;
+  }
+
+  /* #endregion */
+
+  /* #region /users/<user-id>/artworks */
+  .bCxfvI {
+    justify-content: center;
+  }
+
+  /* #endregion */
+
+  /* #region /users/<user-id>/artworks/<illust-id> */
+	.jxryvU {
+    width: auto;
+	}
+
+	.pEkOH {
+    max-width: unset;
+  }
+
+  .cHbIeG {
+    margin: auto;
+  }
+
+  /* #endregion */
+
+  /* #region /tags/* */
+  .jQzvLN {
+    display: flex;
+  }
+
+  /* #endregion */
+}

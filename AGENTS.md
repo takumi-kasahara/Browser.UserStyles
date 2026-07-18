@@ -15,7 +15,7 @@ The project uses modern CSS with user style metadata headers.
 
 Project-specific CSS coding rules are maintained in:
 
-- [.github/instructions/css.instructions.md](.github/instructions/css.instructions.md)
+- [.agents/skills/css-user-styles/SKILL.md](.agents/skills/css-user-styles/SKILL.md)
 
 ## File Naming Conventions
 

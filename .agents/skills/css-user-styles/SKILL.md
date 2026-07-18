@@ -1,16 +1,23 @@
 ---
-description: 'CSS coding conventions for user-style files'
-applyTo: 'src/**/*.css'
+name: css-user-styles
+description: 'CSS coding conventions for Stylus-compatible user-style files (*.user.css). Use when writing or editing user styles in src/ — covers modern CSS targeting, selector naming, property grouping order, color formats, comments, and the Stylus metadata header.'
+license: Complete terms in LICENSE.txt
 ---
 
-# CSS Coding Conventions
+# CSS User Styles
 
-Apply these conventions when writing new user styles.
+Coding conventions for authoring Stylus-compatible user styles (`.user.css`) in this workspace. These are plain CSS stylesheets with a Stylus metadata header, targeting the latest Firefox.
+
+## When to Use This Skill
+
+- Creating or modifying a `.user.css` file under `src/`
+- Adding a new user style for a site
+- Reviewing CSS for selector naming, property grouping, or metadata-header consistency
 
 ## Compatibility Requirements
 
 1. Use modern CSS features targeting current browser standards.
-2. Target latest Firefox.
+2. Target the latest Firefox.
 3. Avoid deprecated CSS properties.
 4. Use standards-compliant CSS.
 
@@ -19,10 +26,10 @@ Apply these conventions when writing new user styles.
 1. Use descriptive lowercase selector names with hyphens.
 2. Keep CSS specificity low to avoid conflicts.
 3. Group properties by intent in this order:
-	- Layout (display, position, flex/grid)
-	- Box model (margin, padding, border)
-	- Visual (color, background, typography)
-	- Effects (transform, transition, filter)
+   - Layout (display, position, flex/grid)
+   - Box model (margin, padding, border)
+   - Visual (color, background, typography)
+   - Effects (transform, transition, filter)
 4. Use modern color formats (`hex`, `rgb`, `hsl`) consistently.
 5. Use clear comments for sections and non-obvious rules.
 
@@ -80,3 +87,16 @@ All user styles must include a Stylus metadata header.
 
 1. Keep property organization consistent across files.
 2. Use descriptive class and ID selectors.
+
+## Gotchas
+
+- **Every file needs the Stylus metadata header** — without `==UserStyle==` / `==/UserStyle==`, Stylus won't list or apply the style.
+- **`@version` is semantic** — use `major.minor.patch` (e.g. `1.0.0`), not a single number.
+- **One `@match` per line** — list each URL pattern on its own `@match` line; multiple sites mean multiple lines.
+- **Keep specificity low** — high-specificity selectors make the style hard to override and conflict with site CSS.
+- **stylelint enforces these rules** — run the linter (`stylelint.config.mjs`) before committing.
+
+## References
+
+- Project guidelines: `AGENTS.md`
+- Linting rules: `stylelint.config.mjs`

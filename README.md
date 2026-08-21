@@ -25,7 +25,7 @@ src/
 ### Prerequisites
 
 - Browser with Stylus extension (or similar user style manager)
-- Stylus browser extension installed ([Firefox](https://addons.mozilla.org/firefox/addon/styl-us/) | [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobg4wdtgibc))
+- Stylus browser extension installed ([Firefox](https://addons.mozilla.org/firefox/addon/styl-us/) | [chrome](;;https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobg4wdtgibc))
 
 ### Installation Methods
 

@@ -4,18 +4,14 @@ export default [
   pluginJs.configs.recommended,
   stylistic.configs.recommended,
   {
-    ignores: [
-      'node_modules',
-    ],
+    ignores: ['node_modules'],
   },
   {
-    files: [
-      '**/*.mjs',
-    ],
+    files: ['**/*.mjs'],
     rules: {
       '@stylistic/arrow-parens': ['error', 'as-needed'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
-      '@stylistic/no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
+      '@stylistic/no-multi-spaces': ['error', { ignoreEOLComments: true }],
       '@stylistic/quote-props': ['error', 'consistent'],
       '@stylistic/semi': ['error', 'always'],
       'consistent-return': 'error',

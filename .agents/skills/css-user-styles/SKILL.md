@@ -1,6 +1,6 @@
 ---
 name: css-user-styles
-description: 'CSS coding conventions for Stylus-compatible user-style files (*.user.css). Use when writing or editing user styles in src/ — covers modern CSS targeting, selector naming, property grouping order, color formats, comments, and the Stylus metadata header.'
+description: "CSS coding conventions for Stylus-compatible user-style files (*.user.css). Use when writing or editing user styles in src/ — covers modern CSS targeting, selector naming, property grouping order, color formats, comments, and the Stylus metadata header."
 license: Complete terms in LICENSE.txt
 ---
 
@@ -38,23 +38,23 @@ Coding conventions for authoring Stylus-compatible user styles (`.user.css`) in 
 ```css
 /* Display Spoiler - Main Container */
 .spoiler-container {
-	/* Layout */
-	display: flex;
-	flex-direction: column;
+  /* Layout */
+  display: flex;
+  flex-direction: column;
 
-	/* Box Model */
-	margin: 1rem 0;
-	padding: 0.5rem;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+  /* Box Model */
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 
-	/* Appearance */
-	background-color: #f5f5f5;
-	color: #333;
+  /* Appearance */
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 .spoiler-container.expanded {
-	background-color: #fff;
+  background-color: #fff;
 }
 ```
 

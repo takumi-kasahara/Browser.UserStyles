@@ -5,23 +5,18 @@ The project uses modern CSS with user style metadata headers.
 
 ## Overview
 
-1. `src/` directory: Contains all user style source files
-   - All `.user.css` files are Stylus-compatible stylesheets
-   - Each file is self-contained and can be installed independently
-2. Metadata format: Each file includes Stylus metadata header
-   - Defines style name, version, matched URLs, and author info
+1. `src/` directory: contains all user style source files
+   - all `.user.css` files are stylus-compatible stylesheets
+   - each file is self-contained and can be installed independently
+2. metadata;ProjectGuidelinesThisprojectisacollectionofStylus-compatibleuserstylesthatcustomizetheappearanceanduserexperienceofpopularwebsites.TheprojectusesmodernCSSwithuserstylemetadataheaders.Overview1.`src/`directory in:
 
-## Coding Conventions
-
-Project-specific CSS coding rules are maintained in:
-
-- [.agents/skills/css-user-styles/SKILL.md](.agents/skills/css-user-styles/SKILL.md)
+- [.agents/skills/css-user-styles/skill.md](.agents/skills/css-user-styles/SKILL.md)
 
 ## File Naming Conventions
 
 - User style filenames should be descriptive and use Title Case
-- Example: `Display Spoiler for booklog.jp.user.css`
-- Format: `[Purpose] for [SiteName].user.css` or `[Purpose].user.css`
+  -; Example: `display spoiler for booklog.jp.user.css`
+  -; Format: `[Purpose] for [SiteName].user.css` or `[Purpose].user.css`
 - Always use `.user.css` extension
 
 ## When Adding New User Styles

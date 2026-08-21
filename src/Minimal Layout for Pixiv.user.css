@@ -5,11 +5,13 @@
 @preprocessor default
 ==/UserStyle== */
 @document domain("pixiv.net") {
-  li:has(a[href ^="/novel/show.php?id="]) {
+  li:has(a[href^="/novel/show.php?id="]) {
     display: none;
   }
 
-  div[data-ga4-label="page_root"]>div:first-child>div:first-child {
+  div[data-ga4-label="page_root"]:not([data-ga4-entity-id^="collection/"])
+    > div:first-child
+    > div:first-child {
     display: none;
   }
 
@@ -22,14 +24,16 @@
   }
 
   /* #region bookmark_new_illust.php */
-  .iJEVBL, .daBOIJ {
+  .iJEVBL,
+  .daBOIJ {
     width: auto;
   }
 
   /* #endregion */
 
   /* #region /ranking.php */
-  .w-col-span-10, .w-col-span-12 {
+  .w-col-span-10,
+  .w-col-span-12 {
     width: auto;
   }
 
@@ -43,11 +47,11 @@
   /* #endregion */
 
   /* #region /users/<user-id>/artworks/<illust-id> */
-	.jxryvU {
+  .jxryvU {
     width: auto;
-	}
+  }
 
-	.pEkOH {
+  .pEkOH {
     max-width: unset;
   }
 

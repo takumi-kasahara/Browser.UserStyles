@@ -1,0 +1,110 @@
+/* ==UserStyle==
+@name         Replace Fonts
+@namespace    https://github.com/takumi-kasahara
+@version      1.0.0
+@preprocessor default
+==/UserStyle== */
+@font-face {
+  font-family: "MS PGothic";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "ＭＳ Ｐゴシック";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "MS UI Gothic";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: Meiryo;
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "Meiryo UI";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "游ゴシック";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "Yu Gothic UI";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "MS PMincho";
+  src: local("BIZ UDPMincho");
+}
+
+@font-face {
+  font-family: "ＭＳ Ｐ明朝";
+  src: local("BIZ UDPMincho");
+}
+
+@font-face {
+  font-family: "Yu Mincho";
+  src: local("BIZ UDPMincho");
+}
+
+@font-face {
+  font-family: "游明朝";
+  src: local("BIZ UDPMincho");
+}
+
+@font-face {
+  font-family: "MS Gothic";
+  src: local("BIZ UDGothic");
+}
+
+@font-face {
+  font-family: "ＭＳ ゴシック";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: "MS Mincho";
+  src: local("BIZ UDMincho");
+}
+
+@font-face {
+  font-family: "ＭＳ 明朝";
+  src: local("BIZ UDPGothic");
+}
+
+@font-face {
+  font-family: Arial;
+  src: local("Arial Nova");
+}
+
+@font-face {
+  font-family: Georgia;
+  src: local("Georgia Pro");
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: local("Gill Sans Nova");
+}
+
+@font-face {
+  font-family: Rockwell;
+  src: local("Rockwell Nova");
+}
+
+@font-face {
+  font-family: Verdana;
+  src: local("Verdana Pro");
+}

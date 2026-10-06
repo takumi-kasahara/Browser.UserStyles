@@ -22,18 +22,20 @@ The project uses modern CSS with user style metadata headers.
 
 1. Create the file in `src/` with `.user.css` extension
 2. Add Stylus metadata with proper @match patterns
-3. Follow naming conventions - Descriptive, Title Case filenames
-4. Organize CSS - Group related properties, use clear comments
-5. Use modern CSS - Leverage CSS Grid, Flexbox, CSS Variables, etc.
-6. Test thoroughly - Verify style works in Stylus before committing
-7. Document - Explain complex rules with comments
+3. Follow naming conventions
+   - Descriptive, Title Case filenames
+4. Organize CSS
+   - Group related properties, use clear comments
+5. Use modern CSS
+   - Leverage CSS Grid, Flexbox, CSS Variables, etc.
+6. Test thoroughly
+   - Verify style works in Stylus before committing
+7. Document
+   - Explain complex rules with comments
 
 ## Project Configuration Files
 
-- `stylelint.config.mjs` - CSS linting rules (enforce consistency)
-- `eslint.config.mjs` - Linting configuration
-
-## References
-
-- [Stylus Wiki](https://github.com/openstyles/stylus/wiki)
-- [Writing UserCSS](https://github.com/openstyles/stylus/wiki/Writing-UserCSS)
+- `eslint.config.mjs`
+  - ESLint rules
+- `stylelint.config.mjs`
+  - CSS linting rules

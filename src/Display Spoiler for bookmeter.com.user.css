@@ -2,6 +2,10 @@
 @name         Display Spoiler for bookmeter.com
 @namespace    https://github.com/takumi-kasahara
 @version      1.0.0
+@homepageURL  https://github.com/takumi-kasahara/Browser.UserStyles
+@supportURL   https://github.com/takumi-kasahara/Browser.UserStyles/issues
+@updateURL    https://github.com/takumi-kasahara/Browser.UserStyles/raw/refs/heads/main/src/Display%20Spoiler%20for%20bookmeter.com.user.css
+@license      GPL-3.0-or-later
 @preprocessor default
 ==/UserStyle== */
 @document domain("bookmeter.com") {

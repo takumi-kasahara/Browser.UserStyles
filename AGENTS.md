@@ -5,37 +5,22 @@ The project uses modern CSS with user style metadata headers.
 
 ## Overview
 
-1. `src/` directory: contains all user style source files
-   - all `.user.css` files are stylus-compatible stylesheets
-   - each file is self-contained and can be installed independently
+1. `src/` directory: Contains all user style source files
+
+## Coding Conventions
+
+Project-specific coding rules are maintained in:
 
 - [.agents/skills/userstyles/skill.md](.agents/skills/userstyles/skill.md)
 
 ## File Naming Conventions
 
-- User style filenames should be descriptive and use Title Case
-  - Example: `display spoiler for booklog.jp.user.css`
-  - Format: `[Purpose] for [SiteName].user.css` or `[Purpose].user.css`
-- Always use `.user.css` extension
+- User scripts must end with `.user.css`
+- Names should be descriptive and indicate the site or functionality
+- Use Title Case for readability
 
 ## When Adding New User Styles
 
 1. Create the file in `src/` with `.user.css` extension
 2. Add Stylus metadata with proper @match patterns
-3. Follow naming conventions
-   - Descriptive, Title Case filenames
-4. Organize CSS
-   - Group related properties, use clear comments
-5. Use modern CSS
-   - Leverage CSS Grid, Flexbox, CSS Variables, etc.
-6. Test thoroughly
-   - Verify style works in Stylus before committing
-7. Document
-   - Explain complex rules with comments
-
-## Project Configuration Files
-
-- `eslint.config.mjs`
-  - ESLint rules
-- `stylelint.config.mjs`
-  - CSS linting rules
+3. Run `npm run lint` to format css

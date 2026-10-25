@@ -1,11 +1,11 @@
-lockfile_version: "1"
-apm_version: 0.33.0
+lockfile_version: '1'
+apm_version: 0.35.0
 dependencies:
   - repo_url: takumi-kasahara/dotfiles
     materialization_repo_url: takumi-kasahara/Dotfiles
     name: userstyles
     host: github.com
-    resolved_commit: 5d2fc5ece11550a627de4f8ffaf6c5b2fa581ff7
+    resolved_commit: 3383e38bcf70d0edb4d454abf105b8f18640665b
     version: unknown
     virtual_path: .apm/skills/userstyles
     is_virtual: true
@@ -14,8 +14,8 @@ dependencies:
       - .agents/skills/userstyles
       - .agents/skills/userstyles/SKILL.md
     deployed_file_hashes:
-      .agents/skills/userstyles/SKILL.md: sha256:fa524ba9a4695b70cd5aca603cd3dec69db445d0cfc112b1c2f71a66cb374450
-    content_hash: sha256:11096c608935b2ea6bcca4b7184a3677323532ddf220aeefbb3f7ddb3f170e17
+      .agents/skills/userstyles/SKILL.md: sha256:5b7b80f1bf78c6eac3e511257f9d473b73b8c9c7bf74643f86fbc4487ca61298
+    content_hash: sha256:3b21e1686230659566070886792d2f64c7762bc2ee07ac70ac8bf578b1221a74
 deployments:
   - kind: project-relative
     target: copilot
@@ -34,4 +34,4 @@ deployments:
     owners:
       - takumi-kasahara/dotfiles/.apm/skills/userstyles
     active_owner: takumi-kasahara/dotfiles/.apm/skills/userstyles
-    content_hash: sha256:fa524ba9a4695b70cd5aca603cd3dec69db445d0cfc112b1c2f71a66cb374450
+    content_hash: sha256:5b7b80f1bf78c6eac3e511257f9d473b73b8c9c7bf74643f86fbc4487ca61298

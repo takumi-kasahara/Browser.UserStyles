@@ -9,7 +9,7 @@
 @preprocessor default
 ==/UserStyle== */
 @document domain("bookmeter.com") {
-  [data-netabare="true"] {
+  [data-netabare='true'] {
     color: inherit !important;
   }
 }

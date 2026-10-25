@@ -9,11 +9,11 @@
 @preprocessor default
 ==/UserStyle== */
 @document domain("pixiv.net") {
-  li:has(a[href^="/novel/show.php?id="]) {
+  li:has(a[href^='/novel/show.php?id=']) {
     display: none;
   }
 
-  div[data-ga4-label="page_root"]:not([data-ga4-entity-id^="collection/"])
+  div[data-ga4-label='page_root']:not([data-ga4-entity-id^='collection/'])
     > div:first-child
     > div:first-child {
     display: none;

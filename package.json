@@ -1,17 +1,17 @@
 {
   "type": "module",
   "scripts": {
-    "build": "node --experimental-strip-types .tools/build.page.ts",
-    "lint": "prettier --write . && markdownlint-cli2 --fix . && eslint --fix . && stylelint --fix **/*.css"
+    "build": "tsc && node --experimental-strip-types .tools/build.page.ts",
+    "lint": "prettier --write . && markdownlint-cli2 --fix . && eslint --fix . && stylelint --fix **/*.css",
+    "test": "tsc"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@html-eslint/eslint-plugin": "^0.67.0",
     "@html-eslint/parser": "^0.67.0",
     "@types/jsdom": "^30.0.0",
-    "@types/node": "^26.6.5",
-    "@types/web": "^0.0.359",
     "eslint": "^10.13.0",
+    "globals": "^17.13.0",
     "jsdom": "^30.1.3",
     "markdownlint-cli2": "^0.24.0",
     "prettier": "^3.9.10",

@@ -1,6 +1,6 @@
-.agents
-apm_modules
-node_modules
+.agents/
+apm_modules/
+node_modules/
 
 .vscode/*
 !.vscode/*.code-snippets

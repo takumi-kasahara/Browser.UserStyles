@@ -1,15 +1,17 @@
 import js from '@eslint/js';
+import html from '@html-eslint/eslint-plugin';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import ts from 'typescript-eslint';
 
 export default defineConfig([
-  js.configs.recommended,
-  ts.configs.strict,
-  ts.configs.stylistic,
   globalIgnores(['apm_modules', 'node_modules']),
   {
     files: ['**/*.mjs'],
+    plugins: {
+      js,
+    },
+    extends: [js.configs.recommended],
     rules: {
       'consistent-return': 'error',
       eqeqeq: 'error',
@@ -20,14 +22,28 @@ export default defineConfig([
     },
   },
   {
-    files: ['**/*.ts'],
-    languageOptions: {
-      parser: ts.parser,
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
+    files: ['**/*.html'],
+    plugins: {
+      html,
     },
+    extends: [html.configs.recommended],
+    language: 'html/html',
+    rules: {
+      'html/indent': ['error', 2],
+    },
+  },
+  {
+    files: ['**/*.ts'],
+    plugins: {
+      html,
+      ts,
+    },
+    extends: [
+      html.configs.recommended,
+      js.configs.recommended,
+      ts.configs.strict,
+      ts.configs.stylistic,
+    ],
     rules: {
       '@typescript-eslint/consistent-type-imports': ['error'],
       'consistent-return': 'error',
@@ -41,7 +57,6 @@ export default defineConfig([
     files: ['.tools/*.ts'],
     languageOptions: {
       globals: globals.node,
-      sourceType: 'module',
     },
   },
 ]);

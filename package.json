@@ -1,7 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "build": "tsc && node --experimental-strip-types .tools/build.page.ts",
+    "build": "npm run lint && npm run build:page",
+    "build:page": "node --experimental-strip-types .tools/build.page.ts",
     "lint": "prettier --write . && markdownlint-cli2 --fix . && eslint --fix . && stylelint --fix **/*.css",
     "test": "tsc"
   },

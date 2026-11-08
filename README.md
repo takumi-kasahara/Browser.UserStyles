@@ -1,6 +1,6 @@
 # Browser UserStyles
 
-A collection of custom CSS stylesheets (user styles) for popular websites. These styles enhance the visual design and user experience of various sites, including cleaner layouts, font customization, and spoiler handling.
+A collection of user styles for [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) that enhance the appearance and usability of web browsing.
 
 ## 🛠️ Project Structure
 
@@ -8,33 +8,28 @@ A collection of custom CSS stylesheets (user styles) for popular websites. These
 src/  # Contains all user CSS stylesheets for various websites
 ```
 
-## 🚀 Installation
+## 📝 Installation
 
-### Prerequisites
+1. Direct installation
+2. Repository from [installation page](./pages/UserStyles.html)
+   - Copy the CSS content and paste into Stylus
 
-- Browser with Stylus extension (or similar user style manager)
-- Stylus browser extension installed ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/))
+## 🚀 Development
 
-### Installation Methods
-
-1. Direct installation - Copy the CSS content and paste into Stylus
-2. File-based - Download the `.user.css` files and import into Stylus
-3. Repository installation - Use Stylus's "Find styles for this site" feature
-
-## 📝 User CSS Format
-
-All styles follow the Stylus user CSS metadata format:
-
-```css
-/* ==UserStyle==
-@name           Style Name
-@namespace      https://github.com/takumi-kasahara
-@version        1.0.0
-@description    Brief description of what this style does
-@author         takumi-kasahara
-@match          https://example.com/*
-==/UserStyle== */
+```bash
+npm install
 ```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Output
+
+- `pages/UserStyles.html`
+  - Installation page with download links to each user style
 
 ## ⚙️ Compatibility
 

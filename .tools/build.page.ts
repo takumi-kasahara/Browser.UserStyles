@@ -14,7 +14,7 @@ interface UserScript {
 (async () => {
   const rootDir = getRootDir();
   const distRoot = path.join(rootDir, 'src');
-  const outputPath = path.join(rootDir, 'pages', 'UserStyles.html');
+  const outputPath = path.join(rootDir, 'index.html');
   const baseDownloadUrl = getBaseDownloadUrl();
   if (!fs.existsSync(distRoot)) {
     console.error(`${distRoot} not found.`);

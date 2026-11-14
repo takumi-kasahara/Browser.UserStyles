@@ -11,7 +11,7 @@ src/  # Contains all user CSS stylesheets for various websites
 ## 📝 Installation
 
 1. Direct installation
-2. Repository from [installation page](./pages/UserStyles.html)
+2. Repository from [installation page](./index.html)
    - Copy the CSS content and paste into Stylus
 
 ## 🚀 Development
